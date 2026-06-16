@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="daystalker"
+version="1.0.0"
+displayName="Daystalker Mod"
+description='''
+Adds the Daystalker — a hostile monster that spawns during the day and drops diamonds.
+'''
+
+[[dependencies.daystalker]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.daystalker]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
