@@ -1,0 +1,8 @@
+{
+  "type": "daystalker:building",
+  "config": {
+    "structure": "daystalker:lava_tower",
+    "random_rotation": true,
+    "offset_y": 0
+  }
+}
