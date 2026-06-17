@@ -1,6 +1,7 @@
 package com.example.daystalker;
 
 import com.example.daystalker.init.ModEntities;
+import com.example.daystalker.init.ModItems;
 import com.example.daystalker.worldgen.ModFeatures;
 import com.example.daystalker.worldgen.WorldGenEvents;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -23,6 +24,7 @@ public class DaystalkerMod {
 
         ModEntities.register(modEventBus);
         ModFeatures.register(modEventBus);
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::onAttributeCreate);

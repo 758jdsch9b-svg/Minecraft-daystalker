@@ -132,3 +132,5 @@ To make it sit and stay in one place:
 - Keep it fed and it will loyally follow you everywhere
 - The dragon is passive — it will not attack mobs on its own in this version
 - /place feature daystalker:bamboo_tower
+- /give @s daystalker:lava_sword
+- B = Blaze Rod, S = Stick (craftas som ett vanligt svärd fast med blaze rods) B B S
