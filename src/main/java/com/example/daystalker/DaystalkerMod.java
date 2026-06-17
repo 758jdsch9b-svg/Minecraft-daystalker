@@ -1,6 +1,8 @@
 package com.example.daystalker;
 
 import com.example.daystalker.init.ModEntities;
+import com.example.daystalker.worldgen.ModFeatures;
+import com.example.daystalker.worldgen.WorldGenEvents;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -20,9 +22,12 @@ public class DaystalkerMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModEntities.register(modEventBus);
+        ModFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::onAttributeCreate);
+
+        WorldGenEvents.register();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
