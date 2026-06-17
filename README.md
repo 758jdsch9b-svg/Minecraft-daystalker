@@ -131,3 +131,4 @@ To make it sit and stay in one place:
 - The dragon **does not take fall damage**, so landing from high up is safe
 - Keep it fed and it will loyally follow you everywhere
 - The dragon is passive — it will not attack mobs on its own in this version
+- /place feature daystalker:bamboo_tower
