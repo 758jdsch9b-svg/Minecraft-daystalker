@@ -1,9 +1,9 @@
 package com.example.daystalker.item;
 
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.ItemStack;
@@ -18,13 +18,19 @@ public class ChickenSwordItem extends SwordItem {
     // Set enemy on fire when hit
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        // Set target on fire for 5 seconds
-        target.setSecondsOnFire(5);
+    
+        boolean result = super.hurtEnemy(stack, target, attacker);
 
-        // Optional: apply weakness briefly
-        target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 0));
-
-        return super.hurtEnemy(stack, target, attacker);
+         // Spawn chicken when enemy dies from this hit
+        if (!target.level().isClientSide && target.getHealth() <= 0
+                && !(target instanceof Chicken)) {
+            Level level = target.level();
+            Chicken chicken = new Chicken(EntityType.CHICKEN, level);
+            chicken.setPos(target.getX(), target.getY(), target.getZ());
+            chicken.setBaby(false);
+            level.addFreshEntity(chicken);
+        }
+        return result;
     }
 
     // Glow in the dark (emit light) - visual effect via tick
