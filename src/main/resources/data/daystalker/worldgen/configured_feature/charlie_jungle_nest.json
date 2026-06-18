@@ -1,0 +1,8 @@
+{
+  "type": "daystalker:building",
+  "config": {
+    "structure": "daystalker:charlie_jungle_nest",
+    "random_rotation": true,
+    "offset_y": 0
+  }
+}

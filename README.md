@@ -134,3 +134,11 @@ To make it sit and stay in one place:
 - /place feature daystalker:bamboo_tower
 - /give @s daystalker:lava_sword
 - B = Blaze Rod, S = Stick (craftas som ett vanligt svärd fast med blaze rods) B B S
+
+## Buildings
+placed_features with value chance
+- Extremt vanligt (Varje liten kulle): 10 till 30 (Bra för enstaka träd eller små stenar)
+- Vanligt (Några stycken per biotop): 50 till 100 (Bra för ruiner eller brunnar)
+- Mellan (Ungefär 1-2 per biotop): 200 till 350
+- Sällsynt (Ungefär 1 per biotop): 450 till 600 (Perfekt för ditt Lava Tower!)
+- Extremt sällsynt (Som ett Woodland Mansion): 1000+

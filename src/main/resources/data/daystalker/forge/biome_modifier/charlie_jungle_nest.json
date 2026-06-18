@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "daystalker:charlie_jungle_nest",
+  "step": "surface_structures"
+}
