@@ -1,6 +1,9 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": [
+    "#minecraft:is_jungle",
+    "#minecraft:is_forest"
+  ],
   "features": "daystalker:lava_tower",
   "step": "surface_structures"
 }
