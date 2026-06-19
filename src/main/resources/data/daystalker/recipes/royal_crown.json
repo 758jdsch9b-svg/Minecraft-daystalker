@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G G",
+    "GGG"
+  ],
+  "key": {
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": {
+    "item": "daystalker:royal_crown",
+    "count": 1
+  }
+}

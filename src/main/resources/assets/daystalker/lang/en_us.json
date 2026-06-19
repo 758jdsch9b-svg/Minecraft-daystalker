@@ -2,5 +2,9 @@
   "entity.daystalker.daystalker": "Daystalker",
   "entity.daystalker.dragon": "Dragon",
   "item.daystalker.lava_sword": "Lava Sword",
-  "item.daystalker.chicken_sword": "Chicken Sword"
+  "item.daystalker.chicken_sword": "Chicken Sword",
+  "item.daystalker.royal_crown": "Royal Crown",
+  "item.daystalker.viking_helmet": "Viking Helmet",
+  "item.daystalker.horn": "Horn",
+  "itemGroup.daystalker": "Daystalker Mod"
 }

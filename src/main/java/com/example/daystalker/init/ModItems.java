@@ -1,9 +1,14 @@
 package com.example.daystalker.init;
 
 import com.example.daystalker.DaystalkerMod;
+
 import com.example.daystalker.item.LavaSwordItem;
 import com.example.daystalker.item.ChickenSwordItem;
+import com.example.daystalker.item.HornItem;
 import com.example.daystalker.item.LavaTier;
+import com.example.daystalker.item.RoyalCrownItem;
+import com.example.daystalker.item.VikingHelmetItem;
+
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +37,16 @@ public class ModItems {
                             -2.4F,  // Standard sword attack speed
                             new Item.Properties()
                     ));
+
+    
+    public static final RegistryObject<RoyalCrownItem> ROYAL_CROWN =
+            ITEMS.register("royal_crown", RoyalCrownItem::new);
+
+    public static final RegistryObject<VikingHelmetItem> VIKING_HELMET =
+            ITEMS.register("viking_helmet", VikingHelmetItem::new);
+
+    public static final RegistryObject<HornItem> HORN =
+            ITEMS.register("horn", HornItem::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
