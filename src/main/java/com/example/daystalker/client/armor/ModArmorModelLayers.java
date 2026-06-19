@@ -11,4 +11,7 @@ public class ModArmorModelLayers {
 
     public static final ModelLayerLocation VIKING_HELMET =
             new ModelLayerLocation(new ResourceLocation(DaystalkerMod.MOD_ID, "viking_helmet"), "main");
+
+    public static final ModelLayerLocation VIKING_BOOTS =
+            new ModelLayerLocation(new ResourceLocation(DaystalkerMod.MOD_ID, "viking_boots"), "main");
 }

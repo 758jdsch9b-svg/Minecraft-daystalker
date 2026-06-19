@@ -3,6 +3,7 @@ package com.example.daystalker;
 import com.example.daystalker.client.armor.ModArmorModelLayers;
 import com.example.daystalker.client.armor.RoyalCrownModel;
 import com.example.daystalker.client.armor.VikingHelmetModel;
+import com.example.daystalker.client.armor.VikingBootsModel;
 import com.example.daystalker.entity.client.DaystalkerRenderer;
 import com.example.daystalker.entity.client.DragonModel;
 import com.example.daystalker.entity.client.DragonRenderer;
@@ -27,5 +28,6 @@ public class ClientEvents {
         event.registerLayerDefinition(ModDragonModelLayer.DRAGON, DragonModel::createBodyLayer);
         event.registerLayerDefinition(ModArmorModelLayers.ROYAL_CROWN, RoyalCrownModel::createLayer);
         event.registerLayerDefinition(ModArmorModelLayers.VIKING_HELMET, VikingHelmetModel::createLayer);
+        event.registerLayerDefinition(ModArmorModelLayers.VIKING_BOOTS, VikingBootsModel::createLayer);
     }
 }

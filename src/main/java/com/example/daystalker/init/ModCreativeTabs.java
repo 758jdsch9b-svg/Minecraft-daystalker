@@ -25,6 +25,7 @@ public class ModCreativeTabs {
                                 output.accept(ModItems.ROYAL_CROWN.get());
                                 output.accept(ModItems.VIKING_HELMET.get());
                                 output.accept(ModItems.HORN.get());
+                                output.accept(ModItems.VIKING_BOOTS.get());
                             })
                             .build());
 

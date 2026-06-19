@@ -8,6 +8,7 @@ import com.example.daystalker.item.HornItem;
 import com.example.daystalker.item.LavaTier;
 import com.example.daystalker.item.RoyalCrownItem;
 import com.example.daystalker.item.VikingHelmetItem;
+import com.example.daystalker.item.VikingBootsItem;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -47,6 +48,9 @@ public class ModItems {
 
     public static final RegistryObject<HornItem> HORN =
             ITEMS.register("horn", HornItem::new);
+
+    public static final RegistryObject<VikingBootsItem> VIKING_BOOTS =
+            ITEMS.register("viking_boots", VikingBootsItem::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

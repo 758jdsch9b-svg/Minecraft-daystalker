@@ -44,6 +44,24 @@ public class CustomArmorClientExtension implements IClientItemExtensions {
             EquipmentSlot slot, HumanoidModel<?> defaultModel) {
         HumanoidModel<LivingEntity> m = getModel();
         ((HumanoidModel) defaultModel).copyPropertiesTo((HumanoidModel) m);
+        m.setAllVisible(false);
+
+        if (m instanceof VikingBootsModel bootModel) {
+            bootModel.setBootsVisible(slot == EquipmentSlot.FEET);
+        }
+
+        if (slot == EquipmentSlot.HEAD) {
+            m.head.visible = true;
+            m.hat.visible = true;
+        } else if (slot == EquipmentSlot.CHEST) {
+            m.body.visible = true;
+            m.rightArm.visible = true;
+            m.leftArm.visible = true;
+        } else if (slot == EquipmentSlot.LEGS) {
+            m.rightLeg.visible = true;
+            m.leftLeg.visible = true;
+        }
+
         return m;
     }
 }
